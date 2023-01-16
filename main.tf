@@ -17,7 +17,7 @@ resource "aws_instance" "cerberus" {
   user_data = file("./install-nginx.sh")
 }
 
-resource "aws_key_pair" "keyyy" {
+resource "aws_key_pair" "cerberus" {
   key_name = "keyyy"
   public_key = file("~/.ssh/id_rsa.pub")
 }
