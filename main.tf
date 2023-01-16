@@ -13,13 +13,13 @@ variable "region" {
 resource "aws_instance" "cerberus" {
   ami = var.ami
   instance_type = var.instance_type
-  key_name = "keyyy"
+  key_name = "cerberus"
   user_data = file("./install-nginx.sh")
 }
 
-resource "aws_key_pair" "keyyy" {
-  key_name = "keyyy"
-  public_key = file("~/.ssh/id_rsa.pub")
+resource "aws_key_pair" "cerberus-key" {
+  key_name = "cerberus"
+  public_key = file("~/.ssh/cerberus.pub")
 }
 
 
