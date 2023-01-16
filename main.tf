@@ -1,5 +1,5 @@
 variable "ami" {
-  default = "ami-06178cf087598769c"
+  default = "ami-0b5eea76982371e91"
 }
 
 variable "instance_type" {
@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "region" {
-  default = "eu-west-2"
+  default = "us-east-1"
 }
 
 resource "aws_instance" "cerberus" {
