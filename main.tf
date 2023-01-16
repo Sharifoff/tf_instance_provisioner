@@ -19,7 +19,7 @@ resource "aws_instance" "cerberus" {
 
 resource "aws_key_pair" "cerberus" {
   key_name = "keyyy"
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = file("~/.ssh/cerberos_id_rsa.pub")
 }
 
 
